@@ -164,7 +164,7 @@
   const ctx = canvas.getContext("2d");
   let pts = [], W, H, raf;
 
-  const palette = ["rgba(56,189,248,", "rgba(129,140,248,", "rgba(232,121,249,"];
+  const palette = ["rgba(244,114,182,", "rgba(232,121,249,", "rgba(251,113,133,"];
 
   const resize = () => {
     W = canvas.width = innerWidth;
@@ -200,7 +200,7 @@
           ctx.beginPath();
           ctx.moveTo(pts[i].x, pts[i].y);
           ctx.lineTo(pts[j].x, pts[j].y);
-          ctx.strokeStyle = "rgba(100,140,255," + (1 - d / linkDist) * 0.12 + ")";
+          ctx.strokeStyle = "rgba(244,114,182," + (1 - d / linkDist) * 0.12 + ")";
           ctx.lineWidth = 1;
           ctx.stroke();
         }
