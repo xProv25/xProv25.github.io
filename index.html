@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html>
+<html lang="it" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>xProv25 â€” Independent Software Developer</title>
+  <meta name="description" content="Portfolio di xProv25 â€” sviluppatore indipendente: plugin e mod di Minecraft, web, giochi e piccoli tool utili." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230f172a'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%2338bdf8' font-family='monospace' font-weight='bold'%3E25%3C/text%3E%3C/svg%3E" />
+  <meta property="og:title" content="xProv25 â€” Independent Software Developer" />
+  <meta property="og:description" content="Plugin & mod di Minecraft, web, game dev e tool utili." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://xprov25.github.io" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <div class="progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <canvas id="particles" aria-hidden="true"></canvas>
+
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#home" class="logo" aria-label="Home">xp<span class="logo-accent">rov25</span></a>
+      <nav class="links" aria-label="Navigazione principale">
+        <a href="#home" class="link active">Home</a>
+        <a href="#about" class="link">About</a>
+        <a href="#skills" class="link">Skills</a>
+        <a href="#projects" class="link">Progetti</a>
+        <a href="#contact" class="link">Contatti</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Apri menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero section" id="home">
+      <div class="hero-content">
+        <p class="hero-greeting reveal">Ciao, sono</p>
+        <h1 class="hero-title reveal">
+          <span class="gradient-text">xProv25</span>
+          <span class="typed-wrap">
+            <span id="typed"></span><span class="caret" aria-hidden="true"></span>
+          </span>
+        </h1>
+        <p class="hero-sub reveal">
+          Sviluppatore indipendente. Costruisco plugin e mod per Minecraft, giochi in
+          Phaser, siti web e quei piccoli tool che finiscono per tornarci utili ogni giorno.
+        </p>
+        <div class="hero-actions reveal">
+          <a href="#projects" class="btn btn-primary">Vedi i progetti <span aria-hidden="true">â†’</span></a>
+          <a href="#contact" class="btn btn-ghost">Contattami</a>
+        </div>
+        <div class="hero-meta reveal">
+          <div class="stat">
+            <span class="stat-num" data-count="3">0</span>
+            <span class="stat-label">repo pubbliche</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">Java</span>
+            <span class="stat-label">lingua principale</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num"><span data-count="10">0</span>+</span>
+            <span class="stat-label">progetti totali</span>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Scorri verso il basso">
+        <span></span>
+      </a>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-head">
+        <p class="section-tag reveal">about</p>
+        <h2 class="section-title reveal">Chi sono</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <div class="card-icon">ðŸ§©</div>
+          <h3>Minecraft Dev</h3>
+          <p>
+            Plugin per server Paper/Spigot e mod per Forge/Fabric. Dalle meccaniche
+            di combattimento ai sistemi di spawn detection: se un server ne ha bisogno,
+            probabilmente l'ho giÃ  provato a costruire.
+          </p>
+        </div>
+        <div class="about-card reveal">
+          <div class="card-icon">ðŸŽ®</div>
+          <h3>Game & Web</h3>
+          <p>
+            Esperimenti con il framework Phaser e sviluppo web in JavaScript,
+            HTML e CSS. Mi piace trasformare un'idea in qualcosa di interattivo,
+            con UI pulite e pochi fronzoli.
+          </p>
+        </div>
+        <div class="about-card reveal">
+          <div class="card-icon">ðŸ¤¹</div>
+          <h3>Tool & Automazione</h3>
+          <p>
+            Launcher custom, bot, utility e script vari. Sono i progetti "rabbit hole":
+            quelli che nascono per risolvere un piccolo problema e finiscono con
+            me a ottimizzarli per giorni.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-head">
+        <p class="section-tag reveal">skills</p>
+        <h2 class="section-title reveal">Cosa uso</h2>
+      </div>
+      <div class="skills-grid reveal">
+        <div class="skill">
+          <div class="skill-top"><span class="skill-name">Java / Spigot / Paper</span><span class="skill-val">90%</span></div>
+          <div class="skill-bar"><span class="skill-fill" data-width="90"></span></div>
+        </div>
+        <div class="skill">
+          <div class="skill-top"><span class="skill-name">Forge / Fabric</span><span class="skill-val">70%</span></div>
+          <div class="skill-bar"><span class="skill-fill" data-width="70"></span></div>
+        </div>
+        <div class="skill">
+          <div class="skill-top"><span class="skill-name">JavaScript / Phaser</span><span class="skill-val">75%</span></div>
+          <div class="skill-bar"><span class="skill-fill" data-width="75"></span></div>
+        </div>
+        <div class="skill">
+          <div class="skill-top"><span class="skill-name">HTML & CSS</span><span class="skill-val">85%</span></div>
+          <div class="skill-bar"><span class="skill-fill" data-width="85"></span></div>
+        </div>
+        <div class="skill">
+          <div class="skill-top"><span class="skill-name">Git & CI</span><span class="skill-val">80%</span></div>
+          <div class="skill-bar"><span class="skill-fill" data-width="80"></span></div>
+        </div>
+        <div class="skill">
+          <div class="skill-top"><span class="skill-name">Problem solving</span><span class="skill-val">99%</span></div>
+          <div class="skill-bar"><span class="skill-fill" data-width="99"></span></div>
+        </div>
+      </div>
+      <p class="skills-note reveal">
+        Stack "in lavorazione": cerco sempre qualcosa di nuovo da rompere e ricostruire. ðŸ”§
+      </p>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-head">
+        <p class="section-tag reveal">projects</p>
+        <h2 class="section-title reveal">Progetti selezionati</h2>
+      </div>
+      <div class="projects-grid">
+        <article class="project reveal">
+          <div class="project-top">
+            <span class="project-icon">âš”ï¸</span>
+            <a class="project-link" href="https://github.com/xProv25/HollowCombatLog" target="_blank" rel="noopener" aria-label="Apri la repository"><svg viewBox="0 0 16 16" width="18" height="18" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
+          </div>
+          <h3 class="project-title">HollowCombatLog</h3>
+          <p class="project-desc">Plugin di combat logging per server Minecraft: registra chi lascia la battaglia e applica le giuste conseguenze. <b>Java Â· Paper</b></p>
+          <div class="project-tags"><span>Java</span><span>Paper</span><span>PvP</span></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-top">
+            <span class="project-icon">ðŸ‘¾</span>
+            <a class="project-link" href="https://github.com/xProv25/spawnerdetectaddon" target="_blank" rel="noopener" aria-label="Apri la repository"><svg viewBox="0 0 16 16" width="18" height="18" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
+          </div>
+          <h3 class="project-title">spawnerdetectaddon</h3>
+          <p class="project-desc">Addon per il rilevamento e la gestione degli spawner: un modo flessibile per controllare generazioni e regole custom. <b>Java Â· Bukkit</b></p>
+          <div class="project-tags"><span>Java</span><span>Bukkit</span><span>Addon</span></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-top">
+            <span class="project-icon">ðŸš€</span>
+            <a class="project-link" href="https://github.com/xProv25/ninni-launcher" target="_blank" rel="noopener" aria-label="Apri la repository"><svg viewBox="0 0 16 16" width="18" height="18" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
+          </div>
+          <h3 class="project-title">ninni-launcher</h3>
+          <p class="project-desc">Launcher custom pensato per semplificare l'accesso e la gestione del gioco: aggiornamenti, configurazioni e avvio rapido. <b>App Dev</b></p>
+          <div class="project-tags"><span>Launcher</span><span>Tools</span><span>UI</span></div>
+        </article>
+
+        <article class="project project-more reveal">
+          <div class="project-more-inner">
+            <p class="project-more-title">E c'Ã¨ ancora di piÃ¹.</p>
+            <p class="project-more-sub">Render tools, bot, shop e altre repo private in costruzione.</p>
+            <a class="btn btn-ghost btn-sm" href="https://github.com/xProv25?tab=repositories" target="_blank" rel="noopener">Tutti i repository â†’</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="section-head">
+        <p class="section-tag reveal">contact</p>
+        <h2 class="section-title reveal">Parliamone</h2>
+      </div>
+      <div class="contact-card reveal">
+        <p class="contact-text">
+          Hai un server, un'idea o un progetto che ti gira in testa? Apri un issue,
+          manda un ping o esplora il codice: ogni input Ã¨ ben accetto. ðŸ‘‹
+        </p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="https://github.com/xProv25" target="_blank" rel="noopener">
+            <svg viewBox="0 0 16 16" width="18" height="18" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+            xProv25 su GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>Â© <span id="year"></span> xProv25 â€” costruito da zero, senza framework.</p>
+      <p class="footer-mono">$ coffee --loop --while(coding)</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
