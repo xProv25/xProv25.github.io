@@ -24,7 +24,6 @@
   </div>
 
   <div class="progress" id="scrollProgress" aria-hidden="true"></div>
-
   <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
   <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
 
@@ -46,72 +45,122 @@
 
   <main>
 
+    <!-- ================= HERO ================= -->
     <section class="section hero" id="home">
-      <div class="hero-inner">
-        <p class="hero-eyebrow reveal">
-          <span class="dot" aria-hidden="true"></span> indipendent developer
-        </p>
-        <h1 class="hero-title reveal">xprov<em>25</em></h1>
-        <p class="typed-line reveal">
-          <span id="typed"></span><span class="caret" aria-hidden="true"></span>
-        </p>
-        <p class="hero-sub reveal">
-          Plugin e mod per Minecraft, piccoli giochi, siti essenziali e strumenti
-          nati per risolvere problemi veri. Nuovo codice, roba pulita.
-        </p>
-        <div class="hero-actions reveal">
-          <a href="#projects" class="btn btn-primary">Guarda i progetti</a>
-          <a href="#contact" class="btn btn-ghost">Scrivimi</a>
+      <div class="hero-grid">
+        <div class="hero-left">
+          <p class="hero-eyebrow reveal">
+            <span class="dot" aria-hidden="true"></span> indipendent developer
+          </p>
+          <h1 class="hero-title reveal">xprov<em>25.</em></h1>
+          <p class="typed-line reveal"><span id="typed"></span><span class="caret" aria-hidden="true"></span></p>
+          <p class="hero-sub reveal">
+            Plugin e mod per Minecraft, piccoli giochi, siti essenziali e strumenti
+            nati per risolvere problemi veri. Preferisco il codice pulito alle soluzioni complicate.
+          </p>
+          <div class="hero-actions reveal">
+            <a href="#projects" class="btn btn-primary">Guarda i progetti <span class="arr">→</span></a>
+            <a href="#contact" class="btn btn-ghost">Scrivimi</a>
+          </div>
+          <div class="hero-stats reveal">
+            <div class="stat">
+              <span class="stat-num"><span data-count="3">0</span></span>
+              <span class="stat-label">repo pubbliche</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">+<span data-count="10">0</span></span>
+              <span class="stat-label">progetti in totale</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">Java</span>
+              <span class="stat-label">lingua principale</span>
+            </div>
+          </div>
         </div>
-        <div class="hero-stats reveal">
-          <div class="stat">
-            <span class="stat-num"><span data-count="3">0</span></span>
-            <span class="stat-label">repo pubbliche</span>
+
+        <div class="hero-visual reveal">
+          <div class="glass terminal" id="terminal" role="img" aria-label="Terminale di stato xProv25">
+            <div class="term-bar">
+              <span class="tb tb-r"></span><span class="tb tb-y"></span><span class="tb tb-g"></span>
+              <span class="term-title">xprov — zsh</span>
+            </div>
+            <div class="term-body mono" id="termBody">
+              <p><span class="t-prompt">➜</span> <span class="t-cmd">whoami</span></p>
+              <p class="t-out">xProv25</p>
+            </div>
           </div>
-          <div class="stat">
-            <span class="stat-num"><span data-count="10">0</span>+</span>
-            <span class="stat-label">progetti in totale</span>
-          </div>
-          <div class="stat">
-            <span class="stat-num">Java</span>
-            <span class="stat-label">lingua principale</span>
-          </div>
+
+          <div class="float-chip chip-java" aria-hidden="true"><span class="chip-ico">☕</span><span>Java</span></div>
+          <div class="float-chip chip-mc" aria-hidden="true"><span class="chip-ico">⛏️</span><span>Minecraft</span></div>
+          <div class="float-chip chip-js" aria-hidden="true"><span class="chip-ico">⚡</span><span>JS/Phaser</span></div>
         </div>
       </div>
-      <a href="#about" class="scroll-hint" aria-label="Scorri verso il basso">
-        <span></span>
-      </a>
+
+      <div class="marquee reveal" aria-hidden="true">
+        <div class="marquee-track">
+          <span>Java</span><span>·</span><span>Paper</span><span>·</span><span>Spigot</span><span>·</span>
+          <span>Fabric</span><span>·</span><span>Forge</span><span>·</span><span>JavaScript</span><span>·</span>
+          <span>Phaser</span><span>·</span><span>HTML</span><span>·</span><span>CSS</span><span>·</span>
+          <span>Git</span><span>·</span><span>Automazione</span><span>·</span>
+          <span>Java</span><span>·</span><span>Paper</span><span>·</span><span>Spigot</span><span>·</span>
+          <span>Fabric</span><span>·</span><span>Forge</span><span>·</span><span>JavaScript</span><span>·</span>
+          <span>Phaser</span><span>·</span><span>HTML</span><span>·</span><span>CSS</span><span>·</span>
+          <span>Git</span><span>·</span><span>Automazione</span><span>·</span>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-hint" aria-label="Scorri verso il basso"><span></span></a>
     </section>
 
+    <!-- ================= ABOUT ================= -->
     <section class="section" id="about">
       <div class="section-head">
-        <p class="section-tag reveal">01 — chi sono</p>
-        <h2 class="section-title reveal">Costruisco cose che<br />si rompono meno.</h2>
+        <p class="section-tag reveal">01 · chi sono</p>
+        <h2 class="section-title reveal">Costruisco cose<br />che si rompono meno.</h2>
       </div>
+
+      <div class="glass bio reveal">
+        <div class="monogram">xp</div>
+        <div class="bio-text">
+          <p>
+            <strong>Salve, sono xProv25</strong> — sviluppatore indipendente. Mi occupo di
+            un po' di tutto: plugin per server Minecraft, mod per il modding, piccoli giochi in Phaser
+            e strumenti che rendono la vita più facile. Tutto nasce da un'idea, finisce in codice,
+            e ogni tanto funziona al primo colpo.
+          </p>
+          <p>Qui sotto trovi come lavoro e cosa ho già messo in giro.</p>
+        </div>
+      </div>
+
       <div class="grid-3">
         <article class="glass tilt reveal">
-          <div class="glass-icon">plugin</div>
+          <div class="tile">⛏️</div>
           <h3>Minecraft Dev</h3>
-          <p>Plugin Paper/Spigot e mod Forge/Fabric. Combattimento, spawner, sistemi custom per server in cui la gente gioca davvero.</p>
+          <p>Plugin Paper/Spigot e mod Forge/Fabric. Meccaniche di combattimento, spawner, sistemi custom per server con persone vere sopra.</p>
+          <div class="chips"><span>Java</span><span>Paper</span><span>Fabric</span></div>
         </article>
         <article class="glass tilt reveal">
-          <div class="glass-icon">web</div>
+          <div class="tile">🕹️</div>
           <h3>Web & Game</h3>
-          <p>JavaScript, Phaser, HTML, CSS. Giochi e interfacce minimali, senza fronzoli inutili.</p>
+          <p>JavaScript, Phaser, HTML e CSS. Giochi e interfacce che girano nel browser, pulite e senza fronzoli inutili.</p>
+          <div class="chips"><span>Phaser</span><span>JS</span><span>HTML/CSS</span></div>
         </article>
         <article class="glass tilt reveal">
-          <div class="glass-icon">tool</div>
+          <div class="tile">🔧</div>
           <h3>Strumenti</h3>
-          <p>Launcher, bot e utility varie. Progetti che iniziano come "5 minuti" e finiscono in ottimizzazioni per giorni.</p>
+          <p>Launcher, bot e utility varie. Progetti che iniziano come “cinque minuti” e finiscono a ottimizzarli per giorni.</p>
+          <div class="chips"><span>Tools</span><span>Bot</span><span>Auto</span></div>
         </article>
       </div>
     </section>
 
+    <!-- ================= SKILLS ================= -->
     <section class="section" id="skills">
       <div class="section-head">
-        <p class="section-tag reveal">02 — skills</p>
+        <p class="section-tag reveal">02 · skills</p>
         <h2 class="section-title reveal">Cosa uso.</h2>
       </div>
+
       <div class="glass skills-glass reveal">
         <div class="skill">
           <div class="skill-top"><span>Java / Spigot / Paper</span><span class="skill-val">90%</span></div>
@@ -140,59 +189,75 @@
       </div>
     </section>
 
+    <!-- ================= PROJECTS ================= -->
     <section class="section" id="projects">
       <div class="section-head">
-        <p class="section-tag reveal">03 — progetti</p>
+        <p class="section-tag reveal">03 · progetti</p>
         <h2 class="section-title reveal">Roba a cui lavoro.</h2>
       </div>
+
       <div class="grid-3">
         <article class="glass tilt reveal">
-          <div class="project-top">
-            <h3 class="project-title">HollowCombatLog</h3>
-            <a href="https://github.com/xProv25/HollowCombatLog" target="_blank" rel="noopener" aria-label="Apri la repository" class="project-link">apri ↗</a>
+          <div class="project-head">
+            <span class="tile">⚔️</span>
+            <a href="https://github.com/xProv25/HollowCombatLog" target="_blank" rel="noopener" class="project-link" aria-label="Apri HollowCombatLog">apri ↗</a>
           </div>
-          <p>Plugin di combat logging per server Minecraft: controllo di chi fugge a metà battaglia e le giuste conseguenze.</p>
+          <h3>HollowCombatLog</h3>
+          <p>Plugin di combat logging per server Minecraft: chi fugge a metà battaglia? Registro, gestisco e punisco.</p>
           <div class="chips"><span>Java</span><span>Paper</span><span>PvP</span></div>
         </article>
 
         <article class="glass tilt reveal">
-          <div class="project-top">
-            <h3 class="project-title">spawnerdetectaddon</h3>
-            <a href="https://github.com/xProv25/spawnerdetectaddon" target="_blank" rel="noopener" aria-label="Apri la repository" class="project-link">apri ↗</a>
+          <div class="project-head">
+            <span class="tile">👀</span>
+            <a href="https://github.com/xProv25/spawnerdetectaddon" target="_blank" rel="noopener" class="project-link" aria-label="Apri spawnerdetectaddon">apri ↗</a>
           </div>
-          <p>Addon per rilevare e gestire gli spawner: regole custom su generazioni e comportamenti.</p>
+          <h3>spawnerdetectaddon</h3>
+          <p>Addon per rilevare e controllare gli spawner: regole custom su generazioni e comportamento dei mob.</p>
           <div class="chips"><span>Java</span><span>Bukkit</span><span>Addon</span></div>
         </article>
 
         <article class="glass tilt reveal">
-          <div class="project-top">
-            <h3 class="project-title">ninni-launcher</h3>
-            <a href="https://github.com/xProv25/ninni-launcher" target="_blank" rel="noopener" aria-label="Apri la repository" class="project-link">apri ↗</a>
+          <div class="project-head">
+            <span class="tile">🚀</span>
+            <a href="https://github.com/xProv25/ninni-launcher" target="_blank" rel="noopener" class="project-link" aria-label="Apri ninni-launcher">apri ↗</a>
           </div>
-          <p>Launcher custom per semplificare accesso, aggiornamenti e configurazione del gioco.</p>
+          <h3>ninni-launcher</h3>
+          <p>Launcher custom per semplificare accesso, aggiornamenti e configurazione del gioco. Meno frizioni, più play.</p>
           <div class="chips"><span>App</span><span>Tools</span><span>UI</span></div>
         </article>
       </div>
 
       <aside class="glass more reveal">
-        <p><strong>Altro in cantiere.</strong> Render tools, bot, negozi e repo private ancora private.</p>
-        <a href="https://github.com/xProv25?tab=repositories" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Tutti i repository</a>
+        <div>
+          <p><strong>Altro in cantiere.</strong> Render tools, bot, negozi e repo private ancora private. Con il tempo le apro.</p>
+          <p class="sub">> git status — sempre in progress ✦</p>
+        </div>
+        <a href="https://github.com/xProv25?tab=repositories" target="_blank" rel="noopener" class="btn btn-primary">Tutti i repository</a>
       </aside>
     </section>
 
+    <!-- ================= CONTACT ================= -->
     <section class="section" id="contact">
       <div class="section-head">
-        <p class="section-tag reveal">04 — contatti</p>
+        <p class="section-tag reveal">04 · contatti</p>
         <h2 class="section-title reveal">Parliamone.</h2>
       </div>
+
       <div class="glass contact-card reveal">
+        <div class="tile tile-lg">💭</div>
+        <h3>Hai un server, un'idea o un problema?</h3>
         <p>
-          Hai un server, un'idea o un problema che gira in testa? Apri un issue,
-          fai un ping su GitHub o scorri qualche scritto di codice.
+          Apri un issue, fai un ping su GitHub o esplora il codice dei progetti.
+          Ogni input è ben accetto — anche i bug report, specie se scritti con calma.
         </p>
-        <a href="https://github.com/xProv25" target="_blank" rel="noopener" class="btn btn-primary">
-          xProv25 su GitHub
-        </a>
+        <div class="contact-actions">
+          <a href="https://github.com/xProv25" target="_blank" rel="noopener" class="btn btn-primary">
+            <svg viewBox="0 0 16 16" width="17" height="17" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+            xProv25 su GitHub
+          </a>
+          <a href="mailto:xprov25@users.noreply.github.com" class="btn btn-ghost">Scrivimi</a>
+        </div>
       </div>
     </section>
 
@@ -200,8 +265,10 @@
 
   <footer class="footer">
     <p>© <span id="year"></span> xProv25 — fatto a mano, niente framework.</p>
-    <p class="mono">$ coffee --loop --while(coding)</p>
+    <p class="mono">~ $ coffee --loop --while(coding)</p>
   </footer>
+
+  <button class="to-top" id="toTop" aria-label="Torna su">↑</button>
 
   <script src="js/script.js"></script>
 </body>
