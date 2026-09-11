@@ -103,10 +103,10 @@
   const typedEl = document.getElementById("typed");
   if (typedEl) {
     const words = [
-      "Plugin e mod per Minecraft.",
-      "Piccoli giochi e siti nel browser.",
-      "Strumenti che servono davvero.",
-      "Sviluppatore indipendente.",
+      "Plugins and mods for Minecraft.",
+      "Small games and sites in the browser.",
+      "Tools that actually help.",
+      "Independent software developer.",
     ];
     let wi = 0, ci = 0, del = false;
     const draw = () => {
@@ -134,7 +134,7 @@
       { type: "cmd", v: "uptime" },
       { type: "out", v: "on github since 2025 ✦" },
       { type: "cmd", v: "ping --dev" },
-      { type: "out", v: "available for feedback & ideas" },
+      { type: "out", v: "open for feedback & ideas" },
     ];
     let li = 0, ci = 0, running = true;
     const caretEl = document.createElement("span");
