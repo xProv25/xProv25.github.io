@@ -130,7 +130,7 @@
       { type: "cmd", v: "status" },
       { type: "out", v: "building plugins · coffee: 6/10" },
       { type: "cmd", v: "stack --used" },
-      { type: "out", v: "java · paper · spigot · fabric · js" },
+      { type: "out", v: "java · python · c · c++ · c# · mysql" },
       { type: "cmd", v: "uptime" },
       { type: "out", v: "on github since 2025 ✦" },
       { type: "cmd", v: "ping --dev" },
