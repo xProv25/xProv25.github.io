@@ -175,6 +175,14 @@ body {
 .btn-primary:hover { box-shadow: 0 16px 40px rgba(236, 72, 153, 0.45); }
 .btn-ghost { background: var(--glass); border: 1px solid var(--glass-border); color: var(--ink); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
 .btn-ghost:hover { border-color: var(--pink); color: var(--pink-deep); }
+
+.btn-discord {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 48px; height: 48px; border-radius: 14px;
+  background: #5865F2; box-shadow: 0 10px 28px rgba(88,101,242,0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn-discord:hover { transform: translateY(-2px); box-shadow: 0 16px 40px rgba(88,101,242,0.45); }
 .arr { transition: transform 0.2s ease; }
 .btn-primary:hover .arr { transform: translateX(4px); }
 
