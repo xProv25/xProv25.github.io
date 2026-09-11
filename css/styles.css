@@ -213,10 +213,7 @@ body {
 .marquee-track { display: flex; gap: 18px; width: max-content; animation: marquee 30s linear infinite; font-family: "JetBrains Mono", monospace; font-size: 13px; letter-spacing: 1px; color: var(--pink-deep); }
 @keyframes marquee { to { transform: translateX(-50%); } }
 
-.scroll-hint { margin: 56px auto 0; width: 26px; height: 44px; border: 2px solid rgba(236, 72, 153, 0.45); border-radius: 14px; display: flex; justify-content: center; padding-top: 8px; transition: border-color 0.3s ease; }
-.scroll-hint:hover { border-color: var(--pink); }
-.scroll-hint span { width: 4px; height: 8px; border-radius: 2px; background: var(--pink); animation: wheel 1.8s ease-out infinite; }
-@keyframes wheel { 0% { transform: translateY(0); opacity: 1; } 70% { transform: translateY(14px); opacity: 0; } 100% { opacity: 0; } }
+.scroll-hint { display: none; }
 
 /* ---------- about bio ---------- */
 .bio { display: flex; gap: 26px; align-items: center; padding: 34px 34px; margin-bottom: 22px; }
