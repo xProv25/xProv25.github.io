@@ -209,11 +209,7 @@ body {
 @keyframes floaty { 50% { transform: translateY(-13px); } }
 
 /* marquee */
-.marquee {
-  overflow: hidden; margin-top: 96px; padding: 16px 0;
-  border-top: 1px solid var(--hairline); border-bottom: 1px solid var(--hairline);
-  width: 100vw; margin-left: calc(50% - 50vw);
-}
+.marquee { overflow: hidden; margin-top: 96px; padding: 16px 0; border-top: 1px solid var(--hairline); border-bottom: 1px solid var(--hairline); }
 .marquee-track { display: flex; gap: 18px; width: max-content; animation: marquee 30s linear infinite; font-family: "JetBrains Mono", monospace; font-size: 13px; letter-spacing: 1px; color: var(--pink-deep); }
 @keyframes marquee { to { transform: translateX(-50%); } }
 
